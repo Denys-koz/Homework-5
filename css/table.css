@@ -1,0 +1,55 @@
+html, body {
+	height: 100%;
+}
+
+.wrapper{
+	min-height: 100%;
+	display: flex;
+}
+
+.table { 
+	margin: auto;
+	position: relative;
+    border-collapse: collapse;
+   }
+
+table { 
+    border-collapse: collapse;
+    width: 528px;
+    height: 564px;
+   }
+
+td{
+	border: 10px solid black;
+}
+
+.yellow{
+	background: rgba(255,255,0,0.75);
+}
+
+.red{
+	background: rgba(255,0,0,0.75);
+}
+
+.blue{
+	background: rgba(0,0,255,0.75);
+}
+
+.black{
+	background: rgba(0,0,0,0.75);
+}
+
+.none{
+	visibility: hidden;
+}
+
+.table::after{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 500px;
+    height: 480px;
+    content: '';
+    border: 18px solid white;
+    border-bottom: 100px solid white;
+}
