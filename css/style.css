@@ -1,10 +1,15 @@
 @font-face {
     font-family: 'Helvetica Neue Regular';
-    src: url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
-         url('../fonts/helveticaneue-thin-webfont.woff') format('woff');
+    src: url('../fonts/HelveticaNeue.ttf') format('ttf'),
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+    font-family: 'Helvetica Neue Regular';
+    src: url('../fonts/helveticaneuecyr-bold.otf') format('otf'),
+    font-weight: bold;
+    font-style: normal;
 }
 
 body {
