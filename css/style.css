@@ -1,16 +1,11 @@
 @font-face {
-    font-family: 'Helvetica Neue Regular';
-    src: url('../fonts/HelveticaNeue.ttf') format('ttf'),
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Helvetica Neue Regular';
-    src: url('../fonts/helveticaneuecyr-bold.otf') format('otf'),
-    font-weight: bold;
-    font-style: normal;
-}
+	font-family: 'Helvetica Neue Regular';
+ 	src: url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+		url('../fonts/helveticaneue-thin-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+ 
+ }
 
 body {
  	font-family: "Helvetica Neue Regular", Tahoma, Arial;
@@ -31,7 +26,7 @@ ul.menu {
     background: rgb(8,83,147);
 }
 
-
+li{ vertical-align: top; }
 li.normal a {
     display: block;
     color: #60b5ed;
@@ -155,12 +150,13 @@ form{
 	margin: 30px auto;
 }
 
-.inputs{
+form div {
 	margin: 14px 0;
-	text-align: center;
 }
 
-.inputs input{
+[type="text"],
+[type="email"],
+[type="password"]{
 	width: 257px;
 	height: 35px;
 	padding-left: 20px;
@@ -174,7 +170,9 @@ form{
 
 }
 
-.inputs input:focus{
+[type="text"]:focus,
+[type="email"]:focus,
+[type="password"]:focus{
 	border: none;
 	border-bottom: 1px solid #689bcc;
 	color: #fffbfb;
@@ -189,9 +187,19 @@ form{
 
 }
 
+input::-webkit-input-placeholder {color:#cccccc;}
+input::-moz-placeholder          {color:#cccccc;}
+input:-moz-placeholder           {color:#cccccc;}
+input:-ms-input-placeholder      {color:#cccccc;}
+
+input:focus::-webkit-input-placeholder {color: #fffbfb;}
+input:focus::-moz-placeholder          {color: #fffbfb;}
+input:focus:-moz-placeholder           {color: #fffbfb;}
+input:focus:-ms-input-placeholder      {color: #fffbfb;}
+
 [type="checkbox"]{
+	margin: 6px 0;
 	color: #cccccc;
-	margin-left: 0;
 }
 
 label[for="updates"]{
@@ -224,5 +232,5 @@ label[for="updates"]{
 	display: block;
 	text-align: center;
 	font-size: 11px;
-	color: #cccccc;
+	color: #fffbfb;
 }
